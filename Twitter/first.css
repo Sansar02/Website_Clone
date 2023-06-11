@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    position: relative;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img{
+    width: 67%;
+}
+
+.right{
+    width: 45%;
+    height: 100%;
+    color: white;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.right-container{
+    width: 500px;
+    height: 100vh;
+    margin: 35px auto auto 35px;
+}
+
+.right-container #bird{
+    width: 3rem;
+}
+
+.right-container h1{
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin: 3rem 0;
+    color: white;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+}
+
+.right-container h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    margin-bottom: 2rem;
+}
+
+.forms{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.button-img{
+    width: 1rem;
+}
+
+.forms button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+}
+
+.forms #btn{
+   margin: 1rem 0;
+}
+
+.forms button span{
+    margin:0 8px;
+}
+
+.forms .or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms .or .line{
+    display: block;
+    width: 2000px;
+    height: 1px;
+    background-color: gray;
+    margin: 0 .50rem;
+}
+
+.forms .cookies{
+    margin-top: .50rem;
+    color: rgb(113, 118, 123);
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.forms .cookies span{
+    cursor: pointer;
+    color:  rgb(29, 155, 240);
+}
+
+.forms .cookies span:hover{
+    text-decoration: underline;
+}
+
+.forms .signup{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.forms .signup button{
+    width: 100%;
+    margin-top: 1rem;
+    color:  rgb(29, 155, 240);
+    background-color: transparent;
+    border: 1px solid gray;
+    font-weight: 600;
+}
+
+.forms .signup button:hover{
+    cursor: pointer;
+    background-color: rgba(29, 156, 240, 0.083);
+}
+
+.footer{
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.footer span{
+    color: rgb(113, 118, 123);
+    font-size:13px;
+    margin: 0 .50rem;
+}
+
+@media screen and (max-width:1350px) {
+    .left{
+        width: 40%;
+    }
+    .right{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .main-container{
+        display: grid;
+    }
+    .left{
+        order: 2;
+    }
+    .footer span{
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px){
+    .right-container h1 {
+        font-size: 34px;
+    }
+    .right-container h2 {
+        font-size: 24px;
+    }
+} 
