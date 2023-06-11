@@ -1,0 +1,506 @@
+/* ==================== GOOGLE FONTS ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ==================== ROOT ==================== */
+:root{
+    --bg-color:#0f0f0f ;
+    --white-color:#fff;
+    --light-gray:rgba(255, 255, 255, 0.491);
+    --signup-color:#3893e1 ;
+    --light-black-color:#222222;
+}
+
+/* ==================== BASIC CSS ==================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--white-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== MAIN CONTAINER ==================== */
+.header{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: var(--bg-color);
+}
+
+.container{
+    padding: .50rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_logo{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.826);
+}
+
+.bx-menu{
+    font-size: 30px;
+    margin-right: 1rem;
+    border-radius: 50px;
+    padding: 5px;
+    background: transparent;
+}
+
+.bx-menu:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+.logo_text{
+    display: flex;
+    align-items: center;
+}
+
+.logos{
+    width: 26px;
+    height: auto;
+}
+
+.text{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.second{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    background-color: transparent;
+    width: 600px;
+    border-radius: 50px;
+    border: 1px solid var(--light-black-color);
+    padding: .60rem 1rem;
+}
+
+.input{
+    color: rgba(255, 255, 255, 0.808);
+    font-size: 1rem;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.glass{
+    top: 0rem;
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    font-size: 25px;
+    padding: .60rem 1.20rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: var(--light-black-color);
+}
+
+.glass:hover{
+    cursor: pointer;
+}
+
+.mic i{
+    position: absolute;
+    right: -4rem;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    padding: .60rem;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.mic i:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.226);
+}
+
+.third{
+    display: flex;
+    align-items: center;
+}
+
+.third .dots{
+    font-size: 1.45rem;
+    color: rgba(255, 255, 255, 0.76);
+    margin-right:1.30rem;
+}
+
+.third .dots:hover{
+    cursor: pointer;
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    padding: .45rem .75rem;
+    border: 1px solid var(--light-black-color);
+    border-radius: 50px;
+    color: var(--signup-color);
+}
+
+.list_icon{
+    font-size: 1.50rem;
+    margin-right: .30rem;
+}
+
+.signup a{
+    font-weight: 700;
+} 
+
+.signup:hover{
+    pointer-events: all;
+    cursor: pointer;
+    background: #3892e13f;
+}
+
+.setting{
+    position: absolute;
+    background-color: gray;
+    padding: .45rem .60rem;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 5rem;
+    margin-left: -1rem;
+}
+
+.sett{
+    display: none;
+}
+
+.search_voice{
+    background-color: gray;
+    position: absolute;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: .45rem .60rem;
+    top: -40%;
+    right: 23rem;
+    margin-top: 5rem;
+}
+
+.search_display{
+    background-color: gray;
+    position: absolute;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: .45rem .60rem;
+    right: 29.30rem;
+}
+
+/* ==================== MAIN CONTAINER ==================== */
+.main-container{
+    display: grid;
+    grid-template-columns: .60fr 3fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+/* ==================== GRID ONE ==================== */
+.grid-1{
+    position: relative;
+    height: 100vh;
+    overflow: auto;
+}
+
+.line{
+    margin: .80rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--light-black-color);
+}
+
+.active{
+    border-radius: 15px;
+    background-color: rgba(57, 56, 56, 0.642);
+    cursor: pointer;
+}
+
+.main_list{
+    margin-top: 1.60rem;
+}
+
+.icons_secondhead{
+    display: flex;
+    align-items: center;
+    gap: 1.50rem;
+    padding: .50rem .60rem;
+    width: 90%;
+}
+
+.icons_secondhead:hover{
+    border-radius: 15px;
+    background-color: rgba(57, 56, 56, 0.642);
+    cursor: pointer;
+}
+
+.icons_secondhead.none:hover{
+    border-radius: 0px;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.list_icon{
+    font-size: 1.30rem;
+}
+
+.listtext{
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.sign{
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.icon_sigup{
+    margin-top: .20rem;
+    width: 45%;
+    text-align: center;
+    padding: .50rem .80rem;
+    display: flex;
+    align-items: center;
+    color: var(--signup-color);
+    border-radius: 50px;
+    border:1px solid rgb(57, 56, 56);
+}
+
+.icon_sigup i{
+    font-size: 23px;
+}
+
+.icon_sigup a{
+    margin-left: 6px;
+    font-weight: 600;
+}
+
+#hover:hover{
+    pointer-events: all;
+    cursor: pointer;
+    background: #3892e13f;
+}
+
+.grids{
+    display: grid;
+    gap: .40rem;
+}
+
+.bold{
+    font-size: .95rem;
+    font-weight: 500;
+    margin: 1rem 0 .50rem;
+}
+
+.small{
+    width: 20px;
+}
+
+.para{
+    font-size: .85rem;
+    color: rgb(169, 169, 169);
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.space{
+    margin: 1rem 0;
+}
+
+.copy{
+    font-size: .77rem;
+    color: rgba(169, 169, 169, 0.491);
+}
+
+/* ==================== GRID TWO ==================== */
+.grid-2{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    height: 150vh;
+}
+
+.item{
+    top: 7%;
+    margin: 0% auto;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1rem 0;
+}
+
+.item .others{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 .30rem;
+    background-color: rgba(128, 128, 128, 0.217);
+    padding: .40rem .80rem;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.item .others:hover{
+    cursor: pointer;
+    background-color: rgba(151, 150, 150, 0.635);
+}
+
+.white{
+    color: black;
+    background: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 .30rem;
+    padding: .40rem .80rem;
+    border-radius: 10px;
+}
+
+.arrow{
+    margin-left: 1rem;
+}
+
+#arrow{
+    font-size: 16px;
+    color: var(--light-gray);
+    padding: 0.70rem;
+    background: transparent;  
+    border-radius: 50px; 
+}
+
+#arrow:hover{
+    cursor: pointer;
+    background: var(--light-black-color);  
+}
+
+.main_box{
+    margin-top: 6.80rem;
+    display: grid;
+    grid-template-columns: repeat(4,300px);
+    gap: 1rem;
+    z-index: -1;
+}
+
+.box-icons{
+    background-color: var(--bg-color);
+}
+
+iframe{
+    border-radius: 15px;
+}
+
+.img_para{
+    margin-top: .60rem;
+    display: flex;
+    align-items: center;
+}
+
+.user{
+    width: 38px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.secondhead{
+    font-size: .95rem;
+    margin-left: .90rem;
+    font-weight: 500;
+}
+
+.left{
+    margin-left: 3.30rem;
+    margin-top: .20rem;
+}
+
+.para_span{
+    display: flex;
+    align-items: center;
+}
+
+.para_span p{
+    margin-right: .30rem;
+    font-size: .79rem;
+    color: var(--light-gray);
+}
+
+.para_span span{
+    font-size: 1rem;
+    color: var(--light-gray);
+}
+
+.left p{
+    margin-top: .20rem;
+    font-size: .79rem;
+    color: var(--light-gray);
+}
+
+.bold-line{
+    width: 100%;
+    height: 3px;
+    background-color: #272727 ;
+    margin: 1.60rem 0;
+}
+
+.shorthead{
+    display: flex;
+    align-items: center;
+}
+
+.shot_img{
+    width: 35px;
+}
+
+.short-text{
+    font-weight: 400;
+    margin-left: .40rem;
+}
+
+.seven_grid{
+    margin-top: 1.60rem;
+    display: grid;
+    grid-template-columns: repeat(7, 190px);
+    gap: 1rem;
+    position: relative;
+}
+
+.seven_img{
+    border-radius: 10px;
+    height: 100%;
+    width: auto;
+}
+
+.shot-text{
+    font-size: .95rem;
+    font-weight: 500;
+    line-height: 20px;
+    margin: .90rem 0 .40rem;
+}
+
+.shot-p{
+    font-size: .85rem;
+    color: rgb(169, 169, 169);
+    font-weight: 400;
+}
